@@ -1,9 +1,13 @@
 import Teste from './Teste';
+import Global from './styles';
 
 function App() {
 
   return (
-    <Teste/>
+    <>
+      <Global />
+      <Teste />
+    </>
   );
 }
 
