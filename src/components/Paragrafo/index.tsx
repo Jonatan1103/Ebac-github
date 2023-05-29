@@ -3,11 +3,12 @@ import { P } from './styles'
 export type PropsParagrafo = {
   children: string
   tipo?: 'principal' | 'secundario'
+  fontSize?: number
 }
 
-const Paragrafo = ({ children, tipo = 'principal' }: PropsParagrafo) => {
+const Paragrafo = ({ children, tipo = 'principal', fontSize }: PropsParagrafo) => {
   return (
-    <P tipo={tipo}>{children}</P>
+    <P fontSize={fontSize} tipo={tipo}>{children}</P>
   )
 }
 
